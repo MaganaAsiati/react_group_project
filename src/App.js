@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Rockets from './pages/Rockets';
-import Missions from './pages/Missions';
-import MyProfile from './pages/MyProfile';
-import Error from './pages/Error';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Rockets from './components/Rockets/Rockets';
+import Missions from './components/Missions/Missions';
+import Profile from './components/Profile/profile';
+import Error from './components/Error/Error';
 
-const App = () => (
-  <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Rockets />} exact />
-      <Route path="/rockets" element={<Rockets />} exact />
-      <Route path="/missions" element={<Missions />} exact />
-      <Route path="/my-profile" element={<MyProfile />} exact />
-      <Route path="*" element={<Error />} />
-    </Routes>
-  </Router>
-);
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/my-profile" element={<Profile />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </>
+  );
+}
 
 export default App;
