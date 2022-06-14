@@ -1,0 +1,22 @@
+.missions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.table {
+  width: 100%;
+  max-width: 1000px;
+  /* display: grid; */
+}
+
+.tr {
+  /* display: grid;
+  grid-template-columns: 1fr auto 1fr 1fr; */
+}
+
+.td:nth-child(3),
+.td:nth-child(4) {
+  white-space: nowrap;
+}
