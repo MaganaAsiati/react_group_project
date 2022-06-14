@@ -12,7 +12,7 @@ const Table = ({ missionData }) => (
         missionName={m.mission_name}
         missionDescription={m.description}
         statusBadge="NOT A MEMBER"
-        statusAction="Join Mission"
+        statusAction="JOIN MISSION"
       />
     ))}
   </table>

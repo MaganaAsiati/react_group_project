@@ -1,22 +1,81 @@
+:root {
+  --color-blue-main: rgb(61, 156, 235);
+  --color-grey-extradark: rgb(56, 56, 56);
+  --color-grey-dark: rgb(80, 80, 80);
+  --color-grey-light: #e1e5ee;
+  --color-grey-extralight: #fcfcfc;
+}
+
 .missions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin: 50px 0;
 }
 
 .table {
   width: 100%;
   max-width: 1000px;
-  /* display: grid; */
+  border-radius: 15px;
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px var(--color-grey-light);
+  text-align: left;
 }
 
-.tr {
-  /* display: grid;
-  grid-template-columns: 1fr auto 1fr 1fr; */
+.table-header-container {
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 5px 10px var(--color-grey-light);
+}
+
+.th {
+  padding: 1.5rem 1.7rem;
+  letter-spacing: 0.07rem;
+}
+
+.td {
+  padding: 1.5rem 1.7rem;
 }
 
 .td:nth-child(3),
 .td:nth-child(4) {
   white-space: nowrap;
+}
+
+.table-row-content {
+  border-top: 1px solid var(--color-grey-light);
+}
+
+.table-row-content:nth-child(odd) {
+  background-color: rgb(243, 243, 243);
+}
+
+.status-badge {
+  padding: 3px 10px 4px 10px;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge .member {
+  background-color: var(--color-blue-main);
+}
+
+.join-mission-btn {
+  padding: 10px 12px;
+  background-color: var(--color-grey-extralight);
+  border: 2px solid var(--color-grey-dark);
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+
+.join-mission-btn:hover {
+  border-color: var(--color-blue-main);
+}
+
+.join-mission-btn:active {
+  filter: brightness(0.95);
 }

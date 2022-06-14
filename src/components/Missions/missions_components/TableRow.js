@@ -8,16 +8,17 @@ const TableRow = ({
   };
 
   return (
-    <tr className="tr">
-      <td className="td">{missionName}</td>
+    <tr className="tr table-row-content">
+      <td className="td table-mission-name">{missionName}</td>
       <td className="td">{missionDescription}</td>
       <td className="td">
-        <div>{statusBadge}</div>
+        <div className="status-badge">{statusBadge}</div>
       </td>
       <td className="td">
         <button
           type="button"
           onClick={handleAction}
+          className="join-mission-btn"
         >
           {statusAction}
         </button>
