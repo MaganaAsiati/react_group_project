@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ProfileMissions = ({ missionName }) => (
-  <div>
+  <div className="profile-item">
     {missionName}
   </div>
 );

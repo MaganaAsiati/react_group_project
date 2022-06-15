@@ -1,16 +1,8 @@
-:root {
-  --color-blue-main: rgb(61, 156, 235);
-  --color-grey-extradark: rgb(56, 56, 56);
-  --color-grey-dark: rgb(80, 80, 80);
-  --color-grey-light: #e1e5ee;
-  --color-grey-extralight: #fcfcfc;
-}
-
 .missions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin: 50px 15px;
 }
 
 .table {
@@ -48,6 +40,10 @@
 
 .table-row-content:nth-child(odd) {
   background-color: rgb(243, 243, 243);
+}
+
+.table-mission-name {
+  font-weight: 500;
 }
 
 .table-mission-join-leave {
@@ -90,4 +86,12 @@
 
 .join-mission-btn:active {
   filter: brightness(0.95);
+}
+
+/* Special case for mobile */
+@media screen and (max-width: 768px) {
+  .th,
+  .td {
+    display: flex;
+  }
 }
