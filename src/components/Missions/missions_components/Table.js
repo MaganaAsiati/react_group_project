@@ -4,7 +4,7 @@ import TableRow from './TableRow';
 
 const Table = ({ missionData }) => (
   <table className="table">
-    <thead className="table-header-container">
+    <thead className="thead">
       <TableHeader />
     </thead>
     <tbody>

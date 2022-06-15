@@ -22,7 +22,8 @@
   text-align: left;
 }
 
-.table-header-container {
+.thead {
+  transform: scale(1);
   border-radius: 15px 15px 0 0;
   box-shadow: 0 5px 10px var(--color-grey-light);
 }
@@ -49,6 +50,10 @@
   background-color: rgb(243, 243, 243);
 }
 
+.table-mission-join-leave {
+  text-align: center;
+}
+
 .status-badge {
   padding: 3px 10px 4px 10px;
   border-radius: 5px;
@@ -56,9 +61,10 @@
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
+  text-align: center;
 }
 
-.status-badge .member {
+.status-badge.member {
   background-color: var(--color-blue-main);
 }
 
@@ -74,6 +80,12 @@
 
 .join-mission-btn:hover {
   border-color: var(--color-blue-main);
+}
+
+.join-mission-btn.member {
+  padding: 8px 12px;
+  border: 2px solid red;
+  color: red;
 }
 
 .join-mission-btn:active {
