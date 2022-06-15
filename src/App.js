@@ -5,7 +5,7 @@ import { fetchMissions } from './Redux/missions/missions';
 import Navbar from './components/Navbar/Navbar';
 import Rockets from './components/Rockets/Rockets';
 import Missions from './components/Missions/Missions';
-import Profile from './components/Profile/profile';
+import Profile from './components/Profile/Profile';
 import Error from './components/Error/Error';
 
 function App() {

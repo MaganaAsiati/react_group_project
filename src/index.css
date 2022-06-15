@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --color-blue-main: rgb(61, 156, 235);
+  --color-grey-extradark: rgb(56, 56, 56);
+  --color-grey-dark: rgb(80, 80, 80);
+  --color-grey: rgb(214, 214, 214);
+  --color-grey-light: #e1e5ee;
+  --color-grey-extralight: #fcfcfc;
+}
+
 *,
 *::before,
 *::after {
