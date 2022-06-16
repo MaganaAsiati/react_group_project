@@ -1,5 +1,7 @@
 import missionsReducer, { showMissions, joinMission, leaveMission } from '../Redux/missions/missions';
-import apiData from '../apiData';
+import missionsApiData from '../__testData__/missionsApiData';
+
+const apiData = missionsApiData;
 
 describe('SHOW_MISSIONS action', () => {
   it('Should update the state with API data', () => {

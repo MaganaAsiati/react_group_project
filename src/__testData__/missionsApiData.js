@@ -1,4 +1,4 @@
-const apiData = [
+const missionsApiData = [
   {
     mission_name: 'Thaicom',
     mission_id: '9D1B7E0',
@@ -180,4 +180,4 @@ const apiData = [
   },
 ];
 
-export default apiData;
+export default missionsApiData;

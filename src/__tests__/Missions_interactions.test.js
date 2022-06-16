@@ -15,13 +15,17 @@ const row1Data = {
 
 beforeEach(() => render(
   <Provider store={store}>
-    <TableRow
-      key={row1Data.mission_id}
-      missionId={row1Data.mission_id}
-      missionName={row1Data.mission_name}
-      missionDescription={row1Data.description}
-      missionReserved={row1Data.reserved || false}
-    />
+    <table>
+      <tbody>
+        <TableRow
+          key={row1Data.mission_id}
+          missionId={row1Data.mission_id}
+          missionName={row1Data.mission_name}
+          missionDescription={row1Data.description}
+          missionReserved={row1Data.reserved || false}
+        />
+      </tbody>
+    </table>
   </Provider>,
 ));
 
@@ -34,13 +38,17 @@ describe('User interaction test for "Join Mission" button', () => {
     // Re-render
     render(
       <Provider store={store}>
-        <TableRow
-          key={row1Data.mission_id}
-          missionId={row1Data.mission_id}
-          missionName={row1Data.mission_name}
-          missionDescription={row1Data.description}
-          missionReserved={row1Data.reserved || false}
-        />
+        <table>
+          <tbody>
+            <TableRow
+              key={row1Data.mission_id}
+              missionId={row1Data.mission_id}
+              missionName={row1Data.mission_name}
+              missionDescription={row1Data.description}
+              missionReserved={row1Data.reserved || false}
+            />
+          </tbody>
+        </table>
       </Provider>,
     );
     // Expect status to be updated to active member
@@ -55,13 +63,17 @@ describe('User interaction test for "Join Mission" button', () => {
     // Re-render
     render(
       <Provider store={store}>
-        <TableRow
-          key={row1Data.mission_id}
-          missionId={row1Data.mission_id}
-          missionName={row1Data.mission_name}
-          missionDescription={row1Data.description}
-          missionReserved={row1Data.reserved || false}
-        />
+        <table>
+          <tbody>
+            <TableRow
+              key={row1Data.mission_id}
+              missionId={row1Data.mission_id}
+              missionName={row1Data.mission_name}
+              missionDescription={row1Data.description}
+              missionReserved={row1Data.reserved || false}
+            />
+          </tbody>
+        </table>
       </Provider>,
     );
     // Expect status to be updated to active member

@@ -2,11 +2,13 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import store from '../Redux/configureStore';
-import apiData from '../apiData';
+import missionsApiData from '../__testData__/missionsApiData';
 import Missions from '../components/Missions/Missions';
 import Table from '../components/Missions/missions_components/Table';
 import TableHeader from '../components/Missions/missions_components/TableHeader';
 import TableRow from '../components/Missions/missions_components/TableRow';
+
+const apiData = missionsApiData;
 
 describe('Snapshot test for "Missions" page', () => {
   it('It should render an identical template', async () => {
