@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../../Redux/Rockets/rocket';
+import Rocket from './Rocket';
 
 function Rockets() {
   const rockets = useSelector((state) => state.rockets);
@@ -11,7 +12,18 @@ function Rockets() {
       dispatch(getRockets());
     }
   }, []);
-  return <div>Rockets</div>;
+  return (
+    <div className="Rockets-container">
+      {rockets.map((rocket) => (
+        <Rocket
+          key={rocket.id}
+          flickr_images={rocket.flickr_images}
+          name={rocket.name}
+          description={rocket.description}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default Rockets;
