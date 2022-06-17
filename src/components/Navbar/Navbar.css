@@ -3,7 +3,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 5%;
-  box-shadow: 0 2px 5px -5px #888;
+  margin: 10px;
+  box-shadow: 0 5px 5px -5px #888;
 }
 
 .navbar-left {
