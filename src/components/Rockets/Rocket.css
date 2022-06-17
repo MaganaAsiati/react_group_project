@@ -33,3 +33,10 @@
   color: gray;
   padding: 3px;
 }
+
+.reverted {
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+}
