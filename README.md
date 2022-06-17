@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-🔥 Link 🔥
+🔥 [Link](https://astonishing-bavarois-e474ab.netlify.app) 🔥
 
 ## Getting Started
 
@@ -37,8 +37,8 @@ git clone <repo link>
 ```terminal
 cd <local folder>
 ```
-
-- Once you've cloned the repo and are inside the directory, run `npm install` command to get all necessary installations.
+- Once you've cloned the repo and are inside the directory, run `npm install` 
+command to get all necessary installations.
 
 - **Yep, that's it!** you are now all set and simply run `npm start` to get your clone up and running on the browser.
 
@@ -46,9 +46,9 @@ cd <local folder>
 
 👤 **Magana Mwinja Asiati**
 
-- GitHub: [@MaganaAsiati](https://github.com/MaganaAsiati)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@MaganaAsiati ](https://github.com/MaganaAsiati)
+- Twitter: [@asia_magana](https://twitter.com/asia_magana)
+- LinkedIn: [Asia Magana](https://www.linkedin.com/in/asia-magana-60b451200/)
 
 👤 **Jauhari Alafi**
 

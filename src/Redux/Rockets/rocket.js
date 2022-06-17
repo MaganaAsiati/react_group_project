@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ROCKETS_URL } from '../../url_config';
 
 const GET_ROCKETS = 'GET_ROCKETS';
-const BOOKING_ROCKET = 'BO0KING_ROCKET';
+const BOOKING_ROCKET = 'BOOKING_ROCKET';
 const CANCEL_BOOKING_ROCKET = 'CANCEL_BOOKING_ROCKET';
 
 const defaultState = [];
@@ -40,7 +40,7 @@ const rocketsReducer = (state = defaultState, action) => {
 
 export default rocketsReducer;
 
-const getRocketsAction = (data) => {
+export const getRocketsAction = (data) => {
   const rockets = data.map((rocket) => ({
     id: rocket.id,
     name: rocket.rocket_name,
