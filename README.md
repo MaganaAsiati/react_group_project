@@ -17,6 +17,11 @@
 
 🔥 [Link](https://astonishing-bavarois-e474ab.netlify.app) 🔥
 
+## Mockup 
+
+![all-devices-black (4)](https://user-images.githubusercontent.com/95297251/174440003-9119e59f-9608-4f53-8b71-ce797f5a01ea.png)
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps:
