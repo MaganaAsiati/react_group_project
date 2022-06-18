@@ -1,0 +1,97 @@
+.missions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 15px;
+}
+
+.table {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 15px;
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px var(--color-grey-light);
+  text-align: left;
+}
+
+.thead {
+  transform: scale(1);
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 5px 10px var(--color-grey-light);
+}
+
+.th {
+  padding: 1.5rem 1.7rem;
+  letter-spacing: 0.07rem;
+}
+
+.td {
+  padding: 1.5rem 1.7rem;
+}
+
+.td:nth-child(3),
+.td:nth-child(4) {
+  white-space: nowrap;
+}
+
+.table-row-content {
+  border-top: 1px solid var(--color-grey-light);
+}
+
+.table-row-content:nth-child(odd) {
+  background-color: rgb(243, 243, 243);
+}
+
+.table-mission-name {
+  font-weight: 500;
+}
+
+.table-mission-join-leave {
+  text-align: center;
+}
+
+.status-badge {
+  padding: 3px 10px 4px 10px;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.status-badge.member {
+  background-color: var(--color-blue-main);
+}
+
+.join-mission-btn {
+  padding: 10px 12px;
+  background-color: var(--color-grey-extralight);
+  border: 2px solid var(--color-grey-dark);
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+
+.join-mission-btn:hover {
+  border-color: var(--color-blue-main);
+}
+
+.join-mission-btn.member {
+  padding: 8px 12px;
+  border: 2px solid red;
+  color: red;
+}
+
+.join-mission-btn:active {
+  filter: brightness(0.95);
+}
+
+/* Special case for mobile */
+@media screen and (max-width: 768px) {
+  .th,
+  .td {
+    display: flex;
+  }
+}

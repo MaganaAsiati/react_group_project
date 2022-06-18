@@ -1,0 +1,42 @@
+.Rockets-container {
+  margin: 15px;
+}
+
+.rocket-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 25px 15px;
+}
+
+.rocket-image {
+  text-align: center;
+}
+
+.rocket-img {
+  height: 200px;
+  width: 250px;
+}
+
+.bookingAction {
+  color: white;
+  border: 3px solid blue;
+  border-radius: 3px;
+  background-color: blue;
+  padding: 3px;
+}
+
+.cancelBookingAction {
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: white;
+  color: gray;
+  padding: 3px;
+}
+
+.reverted {
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+}
